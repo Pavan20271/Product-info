@@ -1,0 +1,62 @@
+// Custom SCSS variables
+$primary-color: #007bff;
+$primary-color-hover: #0056b3;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Image Slider styles */
+.image-slider {
+    text-align: center;
+    position: relative;
+}
+
+.image-slider img {
+    max-width: 100%;
+    display: none;
+}
+/* Styles for the image slider */
+.image-slider {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow: hidden; /* Hide overflowing images */
+    width: 100%; /* Ensure slider takes full width */
+    height: auto; /* Adjust height according to image */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+    img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
